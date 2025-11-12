@@ -29,13 +29,17 @@
               
               }
 
-              .hero ::after {
-                position : absolute;
-                top : 0;
-                left :0;
-                width : 100;
-                height : 100;
-                z-index: -1;
+              .hero ::after{
+                content: "";
+                position: absolute;
+                bottom: -50px;
+                left: 0;
+                width: 100%;
+                height: 11vh;
+                background-color: white;
+                transform: skewY(+2deg);
+                transform-origin: top left;
+                z-index : -1;
               }
 
               .navbar {
@@ -174,3 +178,4 @@
     </body>
 
 </html>
+
