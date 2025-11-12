@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <title>WebPage</title>
+       
+       <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Times New Roman', Times, serif;
+              }
+
+              body {
+                background-color: white;
+                color : #2d2d2d;
+              }
+
+              .hero {
+                background-color: #1a4b91;
+                color : white;
+                position: relative;
+                min-height: 80vh;
+                padding : 1.5rem 5%;
+                text-align: center;
+              
+              }
+
+              .hero ::after {
+                position : absolute;
+                top : 0;
+                left :0;
+                width : 100;
+                height : 100;
+                z-index: -1;
+              }
+
+              .navbar {
+                display : flex;
+                justify-content: space-between;
+                align-items : center;
+                margin-bottom : 6rem;
+              }
+
+              .navbar-brand {
+                font-size: 1.5rem;
+                font-weight: bold;
+              }
+
+              .navbar-links a{
+                color : white;
+                text-decoration: none;
+                margin-left : 1.5rem;
+                font-size: 1.1rem;
+              } 
+
+              .button {
+               cursor: pointer;
+               border: none;
+               padding :10px 20px;
+               font-size: 1rem;
+               border-radius: 25px;
+               color: white;
+               display: flex;
+               align-items: center;
+               gap: 20px;
+              }
+
+              .login {
+                color : white;
+                font-size : 1.1rem;
+                cursor: pointer;
+              }
+
+              .join-btn {
+                background-color: #5ed1f0;
+                color : white;
+                padding : 0.5rem 1.5rem;
+                border-radius: 5px;
+                font-size : 1.0rem;
+                font-weight: bold;
+                cursor: pointer;
+              }
+              
+              .join.btn :hover {
+                background-color: #3e7c9e;
+              }
+
+              .welcome {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                align-items: center;
+              }
+
+              .hero-content h1{
+                font-size: 3.5rem;
+                margin-bottom: 2rem;
+              }
+
+              .subtext {
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+                line-height: 1.5;
+                opacity: 0.8;
+              }
+
+              .hero-buttons {
+                gap : 1.5rem;
+                justify-content: center;
+              }
+
+              .btn {
+                padding :0.7rem 2rem;
+                border-radius: 5px;
+                font-size: 1.0rem;
+                cursor: pointer;
+              }
+
+              .btn.primary {
+                background-color: #5ed1f0;
+                color:white;
+                border: none;
+    
+              }
+
+              .btn.primary :hover  {
+                background-color: #549caf;
+              }
+
+              .btn.secondary {
+                background-color: transparent;
+                color : #549caf;
+                border : 1.5px solid #549caf;
+              }
+
+              .btn.secondary :hover {
+                background-color: #fffcfc;
+              }
+
+        </style>
+
+    </head>     
+    
+    <body>
+
+        <section class = "hero">
+            <nav class="navbar">
+            <div class="navbar-brand"> BrandName </div>
+            <div class = "navbar-links">
+            <a href="#"> HOME</a>
+            <a href="#"> PRODUCT </a>
+            <a href="#"> PRICING </a>
+            <a href="#"> CONTACT </a>
+           </div>
+
+           <div class="button">
+            <a href="#" class="login"> LOGIN </a>
+            <a href="#" class="join-btn"> JOIN US </a>
+            </div>
+            </nav>
+            <div class="hero-content">
+                <p class="Welcome">Welcome</p><br>
+                <h1>Selling on the<br>internet like a pro</h1>
+                <p class="subtext">we know how large objects will act, but things on a<br>small scale just do not act that way.</p>
+            </div>
+            <div class="hero-buttons">
+                <button class = "btn primary">Get Quote Now</button>
+                <button class = "btn secondary">Learn More</button>
+            </div>
+        </section>
+    </body>
+</html>
